@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evos Anap</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-black text-white">
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="app-layer">
+    <div class="mode-toggle" onclick="toggleMode()">🌙 / ☀️</div>
+
+    <!-- NAME MODAL -->
+    <div id="nameModal" class="name-modal">
+      <div class="name-box">
+        <h2 class="font-bold text-lg">😎 Wellcome boss 🚀</h2>
+        <p class="text-sm text-gray-400 mb-2">Lau siape? Mrpuy 🤬</p>
+        <input id="nameInput" type="text" placeholder="Nama lau ketik disni">
+        <button onclick="saveName()">Iya mok 🤓</button>
+      </div>
+    </div>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="min-h-screen flex items-center justify-center">
+      <div class="page-box">
+        <div class="profile-wrap">
+          <div class="rgb-ring"><img src="logo.png" class="profile-img"></div>
+        </div>
+        <div id="greeting" class="greeting"></div>
+        <h1 class="text-xl font-bold">evos anap</h1>
+        <p class="text-sm text-gray-400 mb-6">anap ganteng idaman stecu aydol kalian<br>top reseller mlbb since 2025</p>
+
+        <div class="space-y-3">
+          <a href="https://wa.me/6285183397447" class="btn">📞 Nomor Admin Utama</a>
+          <a href="https://chat.whatsapp.com/LeUM3OAglOl99eYuFd2rO6" class="btn">💬 Grup Jual Beli Terbuka</a>
+          <a href="https://chat.whatsapp.com/DizswPOf4NAGU6ibL6MCIN?s=cl&p=a&mlu=4&ilr=4" class="btn">😹 Grup Stok With Friend</a>
+          <button class="btn" onclick="openPage('linkSaluran')">🥶 Saluran Stok</button>
+          <button class="btn" onclick="openPage('lihatAdmin')">🥵 List Admin Saluran</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LINK SALURAN PAGE -->
+    <div id="linkSaluran" class="page"></div>
+
+    <!-- LIST ADMIN PAGE -->
+    <div id="lihatAdmin" class="page"></div>
+  </div>
+</body>
+</html>
