@@ -167,7 +167,8 @@ const masterAdmin = [
   { name: 'sabix tennyson', link: 'https://wa.me/6283852465307' },
   { name: 'varane yamada', link: 'https://wa.me/6282190140955' },
   { name: 'jeron', link: 'https://wa.me/6285649729182' },
-  { name: 'Kapzz', link: 'https://wa.me/6285751921499' }
+  { name: 'Kapzz', link: 'https://wa.me/6285751921499' },
+  { name: 'lamskuy', link: 'wa.me/62881011637623'}
 ];
 
 function renderListAdmin() {
